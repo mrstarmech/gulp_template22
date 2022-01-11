@@ -1,0 +1,10 @@
+@import 'fonts.scss';
+
+body {
+    font-family: OpenSans;
+    background-color: #000;
+    span {
+        color: red;
+    }
+    background-image: url('../img/asdf.jpg');
+}
