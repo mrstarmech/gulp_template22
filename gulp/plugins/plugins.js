@@ -4,9 +4,11 @@ import browsersync from "browser-sync";
 import rename from "gulp-rename";
 import newer from "gulp-newer";
 import gulpif from "gulp-if";
+import replace from "gulp-replace";
 
 export const plugins = {
     plumber: plumber,
+    replace: replace,
     notify: notify,
     browsersync: browsersync,
     rename: rename,

@@ -13,6 +13,7 @@ export const html = () => {
             })
         ))
         .pipe(fileinclude({prefix: '@@'}))
+        .pipe(app.plugins.replace(/@img\//g,'img/'))
         .pipe(webphtml())
         .pipe(realfavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(app.FAVICON_DATA_FILE)).favicon.html_code))
         .pipe(version({
