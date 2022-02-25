@@ -37,4 +37,4 @@ const build = gulp.series(clean, main);
 
 gulp.task('default', dev);
 
-export { svgsprite, dev, build, img, scss, js, copy, clean }
+export { svgsprite, dev, build, img, scss, js, copy, clean, fonts, favicon }
