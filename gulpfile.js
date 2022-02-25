@@ -31,7 +31,7 @@ function watch() {
 
 
 const fonts = gulp.series(otf2ttf, ttf2woff, fontstyle);
-const main = gulp.series(fonts, favicon, gulp.parallel(copy, html, scss, js, img));
+const main = gulp.series(favicon, gulp.parallel(copy, html, scss, js, img));
 const dev = gulp.series(clean, main, gulp.parallel(watch, server));
 const build = gulp.series(clean, main);
 

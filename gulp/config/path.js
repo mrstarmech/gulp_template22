@@ -41,7 +41,8 @@ export const path = {
         img: `${srcf}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
     },
     clean: [
-        `${dstf}/`,
-        `${intf}/`
+        `${dstf}/**`,
+        `${intf}/**`,
+        `!${dstf}/fonts`
     ]
 }
