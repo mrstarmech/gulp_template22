@@ -1,3 +1,6 @@
 node_modules
 dst
 package-lock.json
+src/*
+!src/default
+!src/default/*

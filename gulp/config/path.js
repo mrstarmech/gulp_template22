@@ -1,9 +1,9 @@
 import * as npath from 'path';
 const root = npath.basename(npath.resolve());
-
-const srcf = './src';
-const intf = './int';
-const dstf = './dst';
+const project = 'default'; //change to actual project name
+const srcf = `./src/${project}`;
+const intf = `./int/${project}`;
+const dstf = `./dst/${project}`;
 
 export const path = {
     root_dir: root,
